@@ -1,12 +1,18 @@
 {
   "name": "mangope-frontend",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "engines": {
+	  "node": "16.10.0",
+	  "yarn": "1.22.11"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "config": "ts-node ./scripts/setenv.ts",
+    "start": "yarn run config -- --environment=dev && node server.js",
+    "build": "yarn run config -- --environment=prod && ng build --aot --prod",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+	"postinstall": "yarn build"
   },
   "private": true,
   "dependencies": {
