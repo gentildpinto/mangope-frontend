@@ -10,7 +10,7 @@
     "config": "ts-node ./scripts/setenv.ts",
     "start-dev": "yarn run config -- --environment=dev && ng serve",
     "start": "yarn run config -- --environment=prod && node server.js",
-    "build": "ng build --aot --prod",
+    "build": "ng build --aot",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
 	"heroku-postbuild": "yarn build"
