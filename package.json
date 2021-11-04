@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "engines": {
 	  "node": "16.10.0",
-	  "yarn": "1.22.11"
+	  "yarn": "1.22.17"
   },
   "scripts": {
     "ng": "ng",
     "config": "ts-node ./scripts/setenv.ts",
-    "start": "yarn run config -- --environment=dev && node server.js",
-    "build": "yarn run config -- --environment=prod && ng build --aot --prod",
+    "start-dev": "yarn run config -- --environment=dev && ng serve",
+    "start": "yarn run config -- --environment=prod && node server.js",
+    "build": "ng build --aot --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-	"postinstall": "yarn build"
+	"heroku-postbuild": "yarn build"
   },
   "private": true,
   "dependencies": {
