@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-	font: 500 16px 'Roboto', sans-serif;
-
-	background: #FFFDFA;
-	// filter: invert(1) hue-rotate(180deg);
-
-	height: 100vh;
 	width: 100vw;
+	height: 100vh;
 
-	overflow: hidden;
+	color: #29292e;
+	background: #FFFDFA;
+	font: 500 16px 'Roboto', sans-serif;
+	// filter: invert(1) hue-rotate(180deg);
 }
