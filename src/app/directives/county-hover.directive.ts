@@ -1,18 +1,16 @@
 import {
 	Directive,
 	Renderer2,
-	ElementRef,
 	HostListener,
 } from '@angular/core';
 
 @Directive({
-  selector: '.land , .county-list-item'
+  selector: '.land, .county-list-item'
 })
 export class CountyHoverDirective {
 
 	constructor(
-		private _renderer: Renderer2,
-		private _element: ElementRef
+		private _renderer: Renderer2
 	) {}
 
 	@HostListener('mouseover', ['$event'])
