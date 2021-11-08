@@ -7,9 +7,6 @@
 	justify-content: center;
 	flex-direction: row-reverse;
 
-	// gap: 10px;
-  	// gap: 10px 20px
-
 	svg {
 		stroke: #0002054f;
 		filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.2));
@@ -17,7 +14,7 @@
 
 	path {
 		fill: #fff;
-		&.on {
+		&.on-hover {
 			// cursor: pointer;
 			// fill: url(#gradient-vertical) #fff;
 			// filter: drop-shadow(5px 5px 2px rgba(0,0,0, 0.4));
@@ -34,7 +31,7 @@
 		li {
 			line-height: 2.4em;
 			list-style: none;
-			&.on {
+			&.on-hover {
 				background-color: red;
 
 				background-image: linear-gradient(to left, #000000, #3d1e22, #773831, #ad5934, #da852c, #e68e24, #f29818, #fda200, #f6820a, #ec6119, #de3d23, #cd022b);

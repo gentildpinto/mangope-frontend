@@ -18,15 +18,15 @@ export class CountyHoverDirective {
 	@HostListener('mouseover', ['$event'])
 	onMouseOver(event: any) {
 		let {path, li} = this.verifyElement(event.target);
-		this._renderer.addClass(path, 'on');
-		this._renderer.addClass(li, 'on');
+		this._renderer.addClass(path, 'on-hover');
+		this._renderer.addClass(li, 'on-hover');
 	}
 
 	@HostListener('mouseout', ['$event'])
 	onMouseOut(event: any) {
 		let {path, li} = this.verifyElement(event.target);
-		this._renderer.removeClass(path, 'on');
-		this._renderer.removeClass(li, 'on');
+		this._renderer.removeClass(path, 'on-hover');
+		this._renderer.removeClass(li, 'on-hover');
 	}
 
 	verifyElement(element: HTMLElement) {
