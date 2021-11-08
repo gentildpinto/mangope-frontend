@@ -14,13 +14,11 @@
 
 	path {
 		fill: #fff;
+
 		&.on-hover {
-			// cursor: pointer;
-			// fill: url(#gradient-vertical) #fff;
-			// filter: drop-shadow(5px 5px 2px rgba(0,0,0, 0.4));
 			cursor: pointer;
-			stroke: url(#gradient-vertical);
 			stroke-width: 1px;
+			stroke: url(#gradient-vertical);
 		}
 	}
 
@@ -29,20 +27,17 @@
 		position: absolute;
 
 		li {
-			line-height: 2.4em;
 			list-style: none;
+			line-height: 2.4em;
+
 			&.on-hover {
-				background-color: red;
-
-				background-image: linear-gradient(to left, #000000, #3d1e22, #773831, #ad5934, #da852c, #e68e24, #f29818, #fda200, #f6820a, #ec6119, #de3d23, #cd022b);
-
 				background-size: 100%;
 				background-repeat: repeat;
 
-				-webkit-background-clip: text;
+				background-clip: text;
 				-webkit-text-fill-color: transparent;
-				-moz-background-clip: text;
-				-moz-text-fill-color: transparent;
+
+				background-image: linear-gradient(to left, #000000, #3d1e22, #773831, #ad5934, #da852c, #e68e24, #f29818, #fda200, #f6820a, #ec6119, #de3d23, #cd022b);
 			}
 		}
 	}
