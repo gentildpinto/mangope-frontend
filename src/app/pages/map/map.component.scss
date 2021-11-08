@@ -1,4 +1,4 @@
-#map-container {
+section {
 	height: 100%;
 	width: 100%;
 
@@ -7,18 +7,20 @@
 	justify-content: center;
 	flex-direction: row-reverse;
 
-	svg {
-		stroke: #0002054f;
-		filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.2));
-	}
+	#map-container {
+		svg {
+			stroke: #0002054f;
+			filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.2));
+		}
 
-	path {
-		fill: #fff;
+		path {
+			fill: #fff;
 
-		&.on-hover {
-			cursor: pointer;
-			stroke-width: 1px;
-			stroke: url(#gradient-vertical);
+			&.on-hover {
+				cursor: pointer;
+				stroke-width: 1px;
+				stroke: url(#gradient-vertical);
+			}
 		}
 	}
 
